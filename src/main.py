@@ -11,6 +11,8 @@ def main():
         X_val, X_test, y_val, y_test = train_test_split(
             X_temp, y_temp, test_size=0.666, random_state=42, stratify=y_temp)
 
+
+
         print(f"Обучающая выборка: {X_train.shape[0]} samples")
         print(f"Валидационная выборка: {X_val.shape[0]} samples")
         print(f"Тестовая выборка: {X_test.shape[0]} samples")
